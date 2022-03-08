@@ -1,0 +1,8 @@
+@value primaryBlack, primaryWhite from '../../common/colors.css';
+
+.footer{
+    width: 100%;
+    background-color: primaryBlack;
+    color:primaryWhite;
+    text-align: center;
+}
