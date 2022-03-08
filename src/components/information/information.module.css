@@ -1,0 +1,18 @@
+@value primaryAccentColor from '../../common/colors.css';
+
+.info{
+    width:100%;
+    height:100%;  
+    display:flex;
+    flex-direction: column;
+}
+.container{
+    width:100%;
+    height:100%; 
+}
+.styleGrid{
+    height:15%;
+    background-color: primaryAccentColor;
+    background-image: url("https://uploads-ssl.webflow.com/60a9378b10cd7f43d5f02a9b/61df0282de303ffbcee0077a_Grid%20BG%20PNG.png"), linear-gradient(180deg, hsla(0, 0%, 100%, 0.2), hsla(0, 0%, 100%, 0.2));
+    background-position: 50% 50%, 5px 10px;
+}

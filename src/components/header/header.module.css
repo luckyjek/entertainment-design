@@ -5,12 +5,13 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding:0.5em;
+    padding:1em;
     background-color: primaryBlack;
 }
 .fild{
     display:flex;
     align-items: center;
+    text-decoration: none;
     color:primaryWhite;
 }
 .logo{
