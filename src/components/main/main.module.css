@@ -1,12 +1,44 @@
+@value primaryAccentColor, primaryGray from '../../common/colors.css';
+
+/*Main*/
 .main{
     width:100%;
     height:100%;  
     background-color:beige;
+    position: relative;
+    /* justify-content: center;
+    align-items: center; */
 }
-.main:hover{
-    
+.logo{
+    position:absolute;
+    z-index: 1;
 }
 .container{
+    position:absolute;
     width:100%;
-    height:100%; 
+    height: 100vh;
+
 }
+
+/*MainItem*/
+.thumbnail{
+    width:100%;
+    height: 100vh;
+}
+
+/* .loading{
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    border:2px solid primaryGray;
+    border-top:2px solid primaryAccentColor;
+    animation: spin 2s linear infinite;
+}
+@keyframes apin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} */
