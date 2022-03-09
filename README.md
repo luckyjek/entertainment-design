@@ -8,4 +8,4 @@
 ##### Simple 레이아웃 마크업 https://luckyjek.tistory.com/110
 
 #### 3월 9일
-##### Youtube api받아오기 및 토글구현(미완성)
+##### Youtube api받아오기 및 토글구현(미완성) https://luckyjek.tistory.com/111
