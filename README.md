@@ -7,5 +7,8 @@
 ##### Router설정 및 Header, Footer 마크업 https://luckyjek.tistory.com/109
 ##### Simple 레이아웃 마크업 https://luckyjek.tistory.com/110
 
+#### <span style="color:red">3월 9일</span>
+##### Youtube api받아오기 https://luckyjek.tistory.com/111
+
 #### 3월 9일
-##### Youtube api받아오기 및 토글구현(미완성) https://luckyjek.tistory.com/111
+##### 토글구현완료 및 Maker Card page Preview부분 레이아웃작업
