@@ -2,3 +2,7 @@
 @value primaryWhite: white;
 @value primaryGray: gray;
 @value primaryAccentColor: #F5FF02;
+@value primaryWheat: wheat;
+
+@value primaryShadow: rgba(217, 217, 217, 1);
+@value primaryColorful: linear-gradient(90deg, rgba(138,132,255,1) 0%, rgba(255,182,182,1) 100%); 

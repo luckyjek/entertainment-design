@@ -3,7 +3,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 import Main from './components/main/main';
 import Info from './components/information/information';
-import Card from './components/card/card';
+import Card from './components/maker/maker';
 import Investors from './components/investors/investors';
 import styles from './app.module.css';
 import Consulting from './components/pages/consulting';
