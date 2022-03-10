@@ -11,12 +11,6 @@ const Information = props => {
             <Header />
             <div className={styles.container}>
                 <h1>Information</h1>
-                <button 
-                    onClick={() => {
-                        history.push('/');
-                    }}
-                >Go to Main
-                </button>
             </div>
             <section className={styles.styleGrid}></section>
             <Footer />

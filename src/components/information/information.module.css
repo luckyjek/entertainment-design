@@ -5,6 +5,8 @@
     height:100%;  
     display:flex;
     flex-direction: column;
+    background-image: url("../../../public/images/img-6.jpg");
+    background-size:cover;
 }
 .container{
     width:100%;

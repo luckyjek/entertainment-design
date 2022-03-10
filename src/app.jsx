@@ -6,6 +6,9 @@ import Info from './components/information/information';
 import Card from './components/card/card';
 import Investors from './components/investors/investors';
 import styles from './app.module.css';
+import Consulting from './components/pages/consulting';
+import Marketing from './components/pages/marketing';
+import Design from './components/pages/design';
 
 function App() {
   const [videos, setVideos] = useState([]);
@@ -21,8 +24,6 @@ function App() {
       .then(result => setVideos(result.items))
       .catch(error => console.log('error', error));
   },[]);
-
-
   return (
     <div className={styles.app}>
       <BrowserRouter>
@@ -33,6 +34,9 @@ function App() {
           <Route path='/info' component={Info} />
           <Route path='/investors' component={Investors} />
           <Route path='/card' component={Card} />
+          <Route path='/consulting'component={Consulting} />
+          <Route path='/marketing' component={Marketing} /> 
+          <Route path='/design' component={Design} />
         </Switch>
       </BrowserRouter>
     </div>
