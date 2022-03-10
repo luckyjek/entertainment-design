@@ -28,19 +28,11 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route path={['/','/main']} exact>
-
               <Main videos={videos}/>
-
           </Route>
-          <Route path='/info'>
-            <Info />
-          </Route>
-          <Route path='/investors'>
-            <Investors />
-          </Route> 
-          <Route path='/card'>
-            <Card />
-          </Route>
+          <Route path='/info' component={Info} />
+          <Route path='/investors' component={Investors} />
+          <Route path='/card' component={Card} />
         </Switch>
       </BrowserRouter>
     </div>
