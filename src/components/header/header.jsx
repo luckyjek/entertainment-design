@@ -1,6 +1,6 @@
 import React,{ useState } from 'react';
 import { Link } from 'react-router-dom';
-import Dropdown from '../dropdown.js/dropdown';
+import Dropdown from '../dropdown/dropdown';
 import styles from './header.module.css';
 
 const Header = () => {
@@ -22,19 +22,18 @@ const Header = () => {
                 </Link>
                 <nav>
                     <ul className={styles.nav}>
-                        <li className={styles.navItem}
+                        <li className={`nav-item ${styles.navItem}`}
                             onMouseEnter={onMouseEnter}
                             onMouseLeave={onMouseLeave}
                         >
-                            <Link to={`/info`} className={`${styles.navItem}`}>INFORMATION <i className='fas fa-caret-down' />  / </Link>
+                            <Link to={`/info`} className={`${styles.navItem}`}>INFORMATION<br/> Dropdown <i className='fas fa-caret-down' />   </Link>
                             {dropdown && <Dropdown />}
-                            {/* {dropdown && console.log('통과')} */}
                         </li>
                         <li className={styles.navItem}>
-                            <Link to={`/investors`} className={styles.navItem}> INVESTORS / </Link>
+                            <Link to={`/investors`} className={styles.navItem}> INVESTORS  </Link>
                         </li>
                         <li className={styles.navItem}>
-                            <Link to={`/card`} className={styles.navItem}> MAKE CARD</Link>
+                            <Link to={`/maker`} className={styles.navItem}> MAKE CARD</Link>
                         </li>
                     </ul>
                 </nav>

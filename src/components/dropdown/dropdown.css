@@ -1,0 +1,41 @@
+@value primaryAccentColor from '../../common/colors.css';
+
+.dropdown-menu {
+  width: 200px;
+  position: absolute;
+  top: 80px;
+  list-style: none;
+  text-align: start;
+}
+
+.dropdown-menu li {
+  background: #F5FF02;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background: #fffcd6;
+}
+
+.dropdown-menu.clicked {
+  display: none;
+}
+
+.dropdown-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+}
+.navItem {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+  .fa-caret-down {
+    display: none;
+  }
+}

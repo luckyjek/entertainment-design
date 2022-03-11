@@ -9,16 +9,10 @@ const Information = props => {
     return(
         <section className={styles.info}>
             <Header />
-            <div className={styles.container}>
-                <h1>Information</h1>
-                <button 
-                    onClick={() => {
-                        history.push('/');
-                    }}
-                >Go to Main
-                </button>
-            </div>
-            <section className={styles.styleGrid}></section>
+            <span className={styles.container}>
+                <h1 className={styles.title}>Information</h1>
+            </span>
+            <div className={styles.styleGrid}></div>
             <Footer />
         </section>
     )

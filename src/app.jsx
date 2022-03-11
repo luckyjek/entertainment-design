@@ -3,11 +3,14 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 import Main from './components/main/main';
 import Info from './components/information/information';
-import Card from './components/card/card';
 import Investors from './components/investors/investors';
 import styles from './app.module.css';
+import Consulting from './components/pages/consulting';
+import Marketing from './components/pages/marketing';
+import Design from './components/pages/design';
+import Maker from './components/maker/maker';
 
-function App() {
+function App({FileInput}) {
   const [videos, setVideos] = useState([]);
   useEffect(()=>{
     const requestOptions = {
@@ -21,26 +24,23 @@ function App() {
       .then(result => setVideos(result.items))
       .catch(error => console.log('error', error));
   },[]);
-
-
   return (
     <div className={styles.app}>
       <BrowserRouter>
         <Switch>
           <Route path={['/','/main']} exact>
-
               <Main videos={videos}/>
+          </Route>
+          <Route path='/info' component={Info} />
+          <Route path='/investors' component={Investors} />
 
+          {/* <Route path='/maker' FileInput={FileInput} component={Maker} /> */}
+          <Route path='/maker'>
+              <Maker  FileInput={FileInput} />
           </Route>
-          <Route path='/info'>
-            <Info />
-          </Route>
-          <Route path='/investors'>
-            <Investors />
-          </Route> 
-          <Route path='/card'>
-            <Card />
-          </Route>
+          <Route path='/consulting'component={Consulting} />
+          <Route path='/marketing' component={Marketing} /> 
+          <Route path='/design' component={Design} />
         </Switch>
       </BrowserRouter>
     </div>

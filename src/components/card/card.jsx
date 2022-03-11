@@ -1,23 +1,33 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
-import Header from '../header/header';
-import Footer from '../footer/footer';
 import styles from './card.module.css';
-import Editor from '../editor/editor';
-import Preview from '../preview/preview';
 
-const Card = () => {
-    const history = useHistory();
-    return(
-        <section className={styles.card}>
-             <Header />
-             <div className={styles.container}>
-               <Editor />
-               <Preview />
-             </div>
-            <Footer />
-        </section>
+const DEFAULT_IMAGE = '../../images/defalt_logo.png'
+
+const Card = ({card}) => {
+    const {name, title, theme, message, fileURL}= card; 
+    const url = fileURL || DEFAULT_IMAGE;
+    return (
+        <li className={`${styles.card} ${getStyles(theme)}`}>
+            <img className={styles.avatar} src={url} alt="profile phto" />
+            <div className={styles.info}>
+                <h1 className={styles.name}>{name}</h1>
+                <p className={styles.title}>{title}</p>
+                <p className={styles.message}>{message}</p>
+            </div>
+        </li>
     );
-};
+}
 
+function getStyles(theme){
+    switch(theme){
+        case 'dark':
+            return styles.dark;
+        case 'light':
+            return styles.light;
+        case 'colorful':
+            return styles.colorful;
+        default:
+            throw new Error(`unknown theme: ${theme}`);
+    }
+}
 export default Card;

@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding:1em;
+    padding:0.8em;
     background-color: primaryBlack;
     box-shadow: -1px 10px 19px -4px rgba(0,0,0,0.75);
 }
@@ -25,12 +25,12 @@
 }
 .nav{
     display: flex;
+    align-items: center;
 }
 .navItem{
     color:primaryWhite;
     text-decoration:none;
     list-style: none;
-}
-.navAction{
-    
+    margin-right: 15px;
+
 }
