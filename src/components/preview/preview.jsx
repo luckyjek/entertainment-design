@@ -11,6 +11,6 @@ const Preview = ({cards}) => (
             ))}
         </ul>
     </section>
-    );
+);
 
 export default Preview;

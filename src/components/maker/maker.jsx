@@ -12,7 +12,7 @@ const Maker = () => {
         {
             id:'1',
             name:'eunkyung1',
-            title:'오늘OOO과 함께 인증샷',
+            title:'오늘OOO와 함께 인증샷',
             theme:'dark',
             message:'같이하는가치',
             fileName:'인증샷',
@@ -21,7 +21,7 @@ const Maker = () => {
         {
             id:'2',
             name:'eunkyung2',
-            title:'오늘OOO과 함께 인증샷',
+            title:'오늘OOO와 함께 인증샷',
             theme:'light',
             message:'같이하는가치',
             fileName:'인증샷',
@@ -30,7 +30,7 @@ const Maker = () => {
         {
             id:'3',
             name:'eunkyung3',
-            title:'오늘OOO과 함께 인증샷',
+            title:'오늘OOO와 함께 인증샷',
             theme:'colorful',
             message:'같이하는가치',
             fileName:'인증샷',
@@ -45,7 +45,7 @@ const Maker = () => {
                <Editor cards={cards}/>
                <Preview cards={cards}/>
              </div>
-            <Footer />
+            {/* <Footer /> */}
         </section>
     );
 };

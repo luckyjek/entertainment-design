@@ -1,6 +1,6 @@
 import React,{ useState } from 'react';
 import { Link } from 'react-router-dom';
-import Dropdown from '../dropdown.js/dropdown';
+import Dropdown from '../dropdown/dropdown';
 import styles from './header.module.css';
 
 const Header = () => {
