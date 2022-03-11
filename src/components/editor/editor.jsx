@@ -3,7 +3,7 @@ import CardEditForm from '../card_edit_form/card_edit_form';
 import CardAddForm from '../card_add_form/card_add_form';
 import styles from './editor.module.css';
 
-const Editor = ({cards, addCard, updateCard, deleteCard}) => (
+const Editor = ({FileInput, cards, addCard, updateCard, deleteCard}) => (
        <section className={styles.editor}>
            <h1 className={styles.title}>Editor</h1>
            {/* cards는 배열이 아니므로, map할 수 있는 상태로 만들기위해 
@@ -11,13 +11,14 @@ const Editor = ({cards, addCard, updateCard, deleteCard}) => (
            그 키를 빙글빙글 돌게할것이다.   */}
             {/* {cards.map(card => ( */}
             {Object.keys(cards).map(key => ( //1,2,3 받아와짐 
-                <CardEditForm 
+             <CardEditForm 
                 key={key} 
+                FileInput={FileInput}
                 card={cards[key]}// cards안에있는 키를 접근
                 updateCard={updateCard} 
                 deleteCard={deleteCard}/>
             ))}
-            <CardAddForm onAdd={addCard}/>
+            <CardAddForm FileInput={FileInput} onAdd={addCard}/>
        </section>     
     );
 

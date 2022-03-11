@@ -6,7 +6,7 @@ import styles from './maker.module.css';
 import Editor from '../editor/editor';
 import Preview from '../preview/preview';
 
-const Maker = () => {
+const Maker = ({FileInput}) => {
     //내가기억하고싶은 것 저장
     const [cards, setCards] = useState({
     '1':  {
@@ -38,7 +38,6 @@ const Maker = () => {
         fileURL: null
     }
     });
-    const history = useHistory();
 
     const createOrUpdateCard = card => {
         const updated = {...cards};
@@ -55,7 +54,13 @@ const Maker = () => {
         <section className={styles.maker}>
              <Header />
              <div className={styles.container}>
-               <Editor cards={cards} addCard={createOrUpdateCard} updateCard={createOrUpdateCard} deleteCard={deleteCard}/>
+               <Editor 
+                FileInput={FileInput} 
+                cards={cards} 
+                addCard={createOrUpdateCard} 
+                updateCard={createOrUpdateCard} 
+                deleteCard={deleteCard}
+              />
                <Preview cards={cards}/>
              </div>
             {/* <Footer /> */}

@@ -3,14 +3,14 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 import Main from './components/main/main';
 import Info from './components/information/information';
-import Card from './components/maker/maker';
 import Investors from './components/investors/investors';
 import styles from './app.module.css';
 import Consulting from './components/pages/consulting';
 import Marketing from './components/pages/marketing';
 import Design from './components/pages/design';
+import Maker from './components/maker/maker';
 
-function App() {
+function App({FileInput}) {
   const [videos, setVideos] = useState([]);
   useEffect(()=>{
     const requestOptions = {
@@ -33,7 +33,11 @@ function App() {
           </Route>
           <Route path='/info' component={Info} />
           <Route path='/investors' component={Investors} />
-          <Route path='/card' component={Card} />
+
+          {/* <Route path='/maker' FileInput={FileInput} component={Maker} /> */}
+          <Route path='/maker'>
+              <Maker  FileInput={FileInput} />
+          </Route>
           <Route path='/consulting'component={Consulting} />
           <Route path='/marketing' component={Marketing} /> 
           <Route path='/design' component={Design} />
