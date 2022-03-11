@@ -10,10 +10,10 @@ const CardEditForm = ({card}) => {
     <form className={styles.form}>
       <input className={styles.input} type="text" name="name" value={name} />
       <input className={styles.input} type="text" name="title" value={title} />
-      <select className={styles.select} name={theme} value={theme}>
-        <option value="light">Light</option>
-        <option value="dark">Dark</option>
-        <option value="colorful">Colorful</option>
+      <select className={styles.select} name="theme" value={theme}>
+        <option value="light">light</option>
+        <option value="dark">dark</option>
+        <option value="colorful">colorful</option>
       </select>
       <textarea className={styles.textarea} name="message" value={message}/>
       <div className={styles.fileInput}>
