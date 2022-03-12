@@ -9,8 +9,9 @@ import Consulting from './components/pages/consulting';
 import Marketing from './components/pages/marketing';
 import Design from './components/pages/design';
 import Maker from './components/maker/maker';
+import Login from './components/login/login';
 
-function App({FileInput}) {
+function App({FileInput, authService}) {
   const [videos, setVideos] = useState([]);
   useEffect(()=>{
     const requestOptions = {
@@ -31,13 +32,23 @@ function App({FileInput}) {
           <Route path={['/','/main']} exact>
               <Main videos={videos}/>
           </Route>
+
+          <Route path='/login'> 
+              <Login authService={authService}/>
+          </Route>
+          {/* <Route path='/maker' FileInput={FileInput} component={Maker} /> */}
+          <Route path='/maker'>
+              <Maker  FileInput={FileInput} authService={authService}/>
+          </Route>
+          {/* <Route exact path='/' >
+              <Login authService={authService}/>
+          </Route>
+          <Route path='/main'>
+              <Main videos={videos}/>
+          </Route> */}
           <Route path='/info' component={Info} />
           <Route path='/investors' component={Investors} />
 
-          {/* <Route path='/maker' FileInput={FileInput} component={Maker} /> */}
-          <Route path='/maker'>
-              <Maker  FileInput={FileInput} />
-          </Route>
           <Route path='/consulting'component={Consulting} />
           <Route path='/marketing' component={Marketing} /> 
           <Route path='/design' component={Design} />
