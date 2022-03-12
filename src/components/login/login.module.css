@@ -1,0 +1,58 @@
+@value primaryGreen, primaryLightGreen, primaryWhite from '../../common/colors.css';
+
+.login {
+  width: 20rem;
+  height: 20rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 1rem;
+  background-color: primaryWhite;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: primaryWhite;
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.item {
+  padding: 1rem;
+}
+
+.button {
+  width: 100%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.button:hover {
+  background-color: primaryLightGreen;
+}
+
+.simple{
+  font-size: 1.5rem;
+  margin-bottom: -5%;
+}
+.google{
+  color:rgb(228, 13, 13);
+  font-size: 2rem;
+}
+.github{
+  font-size: 2rem;
+}
+
+.home{
+  width: 30%;
+  height: 16%;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  background-color: primaryGreen;
+}

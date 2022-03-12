@@ -1,4 +1,4 @@
-@value primaryBlack, primaryWhite from '../../common/colors.css';
+@value primaryBlack, primaryWhite, primaryGreen from '../../common/colors.css';
 
 .header{
     display: flex;
@@ -32,5 +32,13 @@
     text-decoration:none;
     list-style: none;
     margin-right: 15px;
-
+}
+.logout{
+    padding: 0.6em;
+    border-radius: 20%;
+    background-color: primaryGreen;
+    color: primaryWhite;
+    outline: 0;
+    border:0;
+    cursor:pointer;
 }

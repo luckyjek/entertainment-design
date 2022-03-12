@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Dropdown from '../dropdown/dropdown';
 import styles from './header.module.css';
 
-const Header = () => {
+const Header = ({onLogout}) => {
     const [dropdown, setDropdown] = useState(false);
 
     const onMouseEnter = () => {
@@ -33,9 +33,11 @@ const Header = () => {
                             <Link to={`/investors`} className={styles.navItem}> INVESTORS  </Link>
                         </li>
                         <li className={styles.navItem}>
-                            <Link to={`/maker`} className={styles.navItem}> MAKE CARD</Link>
+                            <Link to={`/login`} className={styles.navItem}> MAKE CARD</Link>
                         </li>
+                        {onLogout && <button className={styles.logout}onClick={onLogout}>Logout</button>}
                     </ul>
+                   
                 </nav>
             </header>
         </>
