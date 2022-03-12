@@ -1,7 +1,9 @@
 @value primaryBlack: black;
 @value primaryWhite: white;
 @value primaryGray: gray;
+@value primaryLightGray: #e8e7e6;
 @value primaryAccentColor: #F5FF02;
+@value primaryAccentLightColor: #fdffc6;
 @value primaryWheat: wheat;
 @value primaryGreen: #6ab232;
 
