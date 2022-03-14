@@ -1,38 +1,51 @@
+@value mediaQuery from '../../common/size.css';
 @value primaryBlack, primaryWhite, primaryGreen from '../../common/colors.css';
 
 .header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
     padding:0.8em;
     background-color: primaryBlack;
     box-shadow: -1px 10px 19px -4px rgba(0,0,0,0.75);
 }
+
+.containerNav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .fild{
+
     display:flex;
     align-items: center;
     text-decoration: none;
     color:primaryWhite;
 }
+
 .logo{
     width: 50px;
     height: 35px;
     margin-right: 5px;
 }
+
 .title{
     font-size: 1.5em;
 }
-.nav{
+
+.ul{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
+
 .navItem{
     color:primaryWhite;
     text-decoration:none;
     list-style: none;
     margin-right: 15px;
 }
+    
 .logout{
     padding: 0.6em;
     border-radius: 20%;
@@ -41,4 +54,38 @@
     outline: 0;
     border:0;
     cursor:pointer;
+}
+.toogle{    
+    display: none;
+}
+@media screen and (max-width:mediaQuery){
+    .ul{
+        flex-direction:column; 
+        display: none;
+    }
+    
+    /* .ulActive{
+        flex-direction:column; 
+        display: none;
+    } */
+    .containerNav,
+    .ul>li{
+       width: 100%;
+       text-align: center;
+       display: inline-block;
+       padding: 8px 0px;
+       margin:0;
+    }
+    .toogle{
+        position: absolute;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        /* outline: none; */
+        top: 24px;
+        right: 32px;
+        font-size: 2rem;
+        color: primaryWhite;
+        display:inline;
+    }
 }
