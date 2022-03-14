@@ -10,6 +10,7 @@ const Editor = ({FileInput, cards, addCard, updateCard, deleteCard}) => (
            Object.key()를이용 ->cards라는 오브젝트 안에있는 모든 키들을 받아와서
            그 키를 빙글빙글 돌게할것이다.   */}
             {/* {cards.map(card => ( */}
+            <CardAddForm FileInput={FileInput} onAdd={addCard}/>
             {Object.keys(cards).map(key => ( //1,2,3 받아와짐 
              <CardEditForm 
                 key={key} 
@@ -18,7 +19,7 @@ const Editor = ({FileInput, cards, addCard, updateCard, deleteCard}) => (
                 updateCard={updateCard} 
                 deleteCard={deleteCard}/>
             ))}
-            <CardAddForm FileInput={FileInput} onAdd={addCard}/>
+            
        </section>     
     );
 
