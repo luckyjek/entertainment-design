@@ -1,6 +1,6 @@
 # 🎤  K-pop 엔터테인먼트 홈페이지
 >K-문화를 선도하는 K-pop. 이에 어울리는 Art 느낌의 사이트 제작  
->아티스트와 함께하는 사진을 간직할 수 있는 서비스  
+>아티스트와 함께 찍은 사진을 저장할 수 있는 서비스  
 >(다시 배포한 url 넣기)
 
 </br>
@@ -41,9 +41,9 @@
 
 ### 3.2 main에서 YouTube API 사용
 
-<img src="https://github.com/luckyjek/entertainment-design/blob/main/public/images/portfolio/api-autoplay.png" width="60%" height="60%" />
+<img src="https://github.com/luckyjek/entertainment-design/blob/main/public/images/portfolio/api-autoplay.png" width="100%" height="100%" />
   
-- **자동으로 음악이 흘러나오게 처리** 🔎 [코드 확인](https://github.com/luckyjek/entertainment-design/blob/main/src/components/main/main.jsx#15)
+- **자동으로 음악이 흘러나오게 처리** 🔎 [코드 확인](https://github.com/luckyjek/entertainment-design/blob/main/src/components/main/main.jsx#L15)
   - default음악은 bts로 설정
 
 ### 3.3 ...
@@ -60,56 +60,42 @@
 </br>
 
 ## 4. 핵심 트러블 슈팅
-### 4.1 라우터 설정
--
+### 4.1 라우터 설정할 때 
+- 이 서비스에서는 라우터 v5를 사용하였습니다.  
+  그 이유는 [이전 클론 코딩을 하면서 v6을 사용](https://github.com/luckyjek/card-maker/blob/main/src/app.jsx#L9)해봤기 때문입니다.
+- [React Router](https://reactrouter.com/docs/en/v6/upgrading/v5) 를 보고 처음 path설정할 때, 가독성을 좋게하기위해 아래 `기존코드` 와 같이 설정 하였습니다.
 
 <details>
 <summary><b>기존 코드</b></summary>
 <div markdown="1">
 
 ~~~js
-/**
- *test
- */
-function text() {
-...
-}
+  
+<Route path='/info' FileInput={FileInput} component={Maker} />
 
-// ... 생략
-
-/**
-* test
-*/
-function text() {
-...
-}
 ~~~
 
 </div>
 </details>
 
-- 라우터를 설정하는방법에는 ...
+- 지금생각하면 너무도 당연하지만, error를 해결하는 그 때는 왜 안되는지 이해가안돼서 주석을 하나하나 해가며  
+- 원인은 `기존코드` 와 같은 방식은 Maker로 전달되는것이 아니라고 깨달았고,
+  다시 docs에 들어가서 확인 후, `개선된 코드` 와 같이 변경해주었습니다.
 
 <details>
 <summary><b>개선된 코드</b></summary>
 <div markdown="1">
 
 ~~~js
-/**
- *test
- */
-function text() {
-...
-}
 
-// ... 생략
-
-/**
-* test
-*/
-function text() {
-...
-}
+<Route path='/maker'>
+  <Maker  
+    FileInput={FileInput} 
+    authService={authService}
+    cardRepository={cardRepository}
+  />
+</Route>
+ 
 ~~~
 
 </div>
@@ -117,14 +103,10 @@ function text() {
 
 </br>
 
-## 6. 회고 / 느낀점
+## 5. 회고 / 느낀점
 >프로젝트 개발 회고 글: url
 
-
-
 ----------------------------------------
-
-
 
 ### entertainment-design
 
