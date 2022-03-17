@@ -60,7 +60,10 @@
 </br>
 
 ## 4. 핵심 트러블 슈팅
-### 4.1 라우터 설정할 때 
+### 4.1 라우터 v5, 컴포넌트 전달시 문제
+
+<img src="https://github.com/luckyjek/entertainment-design/blob/main/public/images/portfolio/router-error.png" width="100%" height="100%" />
+
 - 이 서비스에서는 라우터 v5를 사용하였습니다.  
   그 이유는 [이전 클론 코딩을 하면서 v6을 사용](https://github.com/luckyjek/card-maker/blob/main/src/app.jsx#L9)해봤기 때문입니다.
 - [React Router](https://reactrouter.com/docs/en/v6/upgrading/v5) 를 보고 처음 path설정할 때, 가독성을 좋게하기위해 아래 `기존코드` 와 같이 설정 하였습니다.
@@ -70,16 +73,15 @@
 <div markdown="1">
 
 ~~~js
-  
 <Route path='/info' FileInput={FileInput} component={Maker} />
-
 ~~~
 
 </div>
 </details>
 
-- 지금생각하면 너무도 당연하지만, error를 해결하는 그 때는 왜 안되는지 이해가안돼서 주석을 하나하나 해가며  
-- 원인은 `기존코드` 와 같은 방식은 Maker로 전달되는것이 아니라고 깨달았고,
+- 지금생각하면 너무도 당연하지만, error를 해결하는 그 때는 왜 안되는지 이해가 안돼서  
+- 실질적으로 FileInput을 사용하는 CardAddForm 컴포넌트까지 주석을 하나하나 해가며 찾았습니다.  
+- 원인은 `기존코드` 와 같은 방식은 Maker로 전달되지 못하고 <Route />안으로 전달되는것을 깨달았고,
   다시 docs에 들어가서 확인 후, `개선된 코드` 와 같이 변경해주었습니다.
 
 <details>
@@ -87,7 +89,6 @@
 <div markdown="1">
 
 ~~~js
-
 <Route path='/maker'>
   <Maker  
     FileInput={FileInput} 
@@ -95,7 +96,6 @@
     cardRepository={cardRepository}
   />
 </Route>
- 
 ~~~
 
 </div>
