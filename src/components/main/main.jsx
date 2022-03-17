@@ -1,25 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
+
 import { Link } from 'react-router-dom';
 import styles from './main.module.css';
 
-const MainItem = ({video}) => {
+const MainItem = () => {
     return(
         <div className={styles.video}>
-            {/* <img className={styles.thumbnail} src={video.snippet.thumbnails.high.url}
-            alt="video thumbnail" /> */}
-            {/* 0. props로 사용한다.
-                1. 10초뒤에 순서대로 바뀐다. 
-                2. 만약, 클릭 ->  다른 탭이 열리며 유튜브로 이동된다. 
-            */}
            <iframe 
             className={styles.thumbnail}
             title="video.title"
             type="text/html" 
             width="100%" 
             height="100vh"
-            src="https://www.youtube.com/embed/6PmRRLrLDwQ"
+            // src="https://www.youtube.com/embed/6PmRRLrLDwQ?mute=1&autoplay=1"
+            src="https://www.youtube.com/embed/6PmRRLrLDwQ?autoplay=1"
+            allow="autoplay"
             frameBorder="0" 
-            allowFullScreen></iframe>
+            allowFullScreen
+            ></iframe>
         </div>
     );
 };
