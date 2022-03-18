@@ -8,36 +8,7 @@ import Preview from '../preview/preview';
 const Maker = ({FileInput, authService, cardRepository}) => {
     const history = useHistory();
     const historyState = history?.location?.state;
-    const [cards, setCards] = useState({
-        // '1':  {
-        // id:'1',
-        // name:'eunkyung1',
-        // title:'오늘OOO와 함께 인증샷',
-        // theme:'dark',
-        // message:'같이하는가치',
-        // fileName:'인증샷',
-        // fileURL: null
-        // },
-        // '2':{
-        //     id:'2',
-        //     name:'eunkyung2',
-        //     title:'오늘OOO와 함께 인증샷',
-        //     theme:'light',
-        //     message:'같이하는가치',
-        //     fileName:'인증샷',
-        //     fileURL: null
-        // },
-        // '3':   
-        // {
-        //     id:'3',
-        //     name:'eunkyung3',
-        //     title:'오늘OOO와 함께 인증샷',
-        //     theme:'colorful',
-        //     message:'같이하는가치',
-        //     fileName:'인증샷',
-        //     fileURL: null
-        // }
-        });
+    const [cards, setCards] = useState({});
     const [userId, setUserId] = useState(historyState && historyState.id);
     
     const onLogout = () => {

@@ -28,35 +28,35 @@
 <img src="https://github.com/luckyjek/entertainment-design/blob/main/public/images/portfolio/entertainment-sitemap.png" width="100%" height="100%" />
 
 ## 4. 핵심 기능
-  - main에서 YouTube API 사용, 자동으로 음악이 흘러나오게 처리
-  - ...
-  - ...
+  - main 페이지에서 YouTube API 사용, 자동으로 음악 재생  
+  - 재사용 가능한 Modal 컴포넌트  
+  - Faribase 사용한 Google, Github 로그인  
+  - Faribase 사용한 실시간 데이터베이스  
 
 <details>
 <summary><b>핵심 기능 설명 펼쳐보기</b></summary>
 <div markdown="1">
 
-### 4.1 구조도
-
-<img>
-
-- **...** 🔎 [코드 확인](...)
-  - ...
-
-### 4.2 main에서 YouTube API 사용
+### 4.1 main 페이지에서 YouTube API 사용, 자동으로 음악 재생  
 
 <img src="https://github.com/luckyjek/entertainment-design/blob/main/public/images/portfolio/api-autoplay.png" width="100%" height="100%" />
   
-- **자동으로 음악이 흘러나오게 처리** 🔎 [코드 확인](https://github.com/luckyjek/entertainment-design/blob/main/src/components/main/main.jsx#L15)
-  - default음악은 bts로 설정
+- **"autoplay=1", allow="autoplay" 자동으로 음악 재생 되도록 처리** 🔎 [코드 확인](https://github.com/luckyjek/entertainment-design/blob/main/src/components/main/main.jsx#L15)
+  - default음악은 bts로 설정 [참고](https://www.outsystems.com/forums/discussion/66950/autoplay-an-embeded-youtube-video-in-reactive-web-app/)
 
-### 4.3 ...
-- **...** 🔎 [코드 확인](...)
-  - ...
+### 4.2 재사용 가능한 Modal 컴포넌트  
 
-### 4.4 ...
-- **...** 🔎 [코드 확인](...)
-  - ...
+- **하나의 Modal 컴포넌트를을 만들어 필요한 4개 컴포넌트에 사용** 🔎 [코드 확인](...)
+  - Modal이 필요한 각 컴포넌트는 name을 변수를 만들고, Modal로 값을 전달
+
+### 4.3 Faribase 사용한 Google, Github 로그인  
+- **AuthService class생성, 구조화** 🔎 [코드 확인](...)
+  - firebase와 네트워크 통신할때 구조화  
+  - Google, Github 로그인 인증, 함수 재사용 
+
+### 4.4 Faribase 사용한 실시간 데이터베이스  
+- **추가, 삭제, 수정** 🔎 [코드 확인](...)
+  - 공통적으로 사용하는 함수는 Maker 컴포넌트에 정의하여 하위 컴포넌트로 props 전달 
 
 </div>
 </details>
@@ -69,8 +69,8 @@
 <img src="https://github.com/luckyjek/entertainment-design/blob/main/public/images/portfolio/router-error.png" width="100%" height="100%" />
 
 - 이 서비스에서는 라우터 v5를 사용하였습니다.  
-  그 이유는 [이전 클론 코딩을 하면서 v6을 사용](https://github.com/luckyjek/card-maker/blob/main/src/app.jsx#L9)해봤기 때문입니다.
-- [React Router](https://reactrouter.com/docs/en/v6/upgrading/v5) 를 보고 처음 path설정할 때, 가독성을 좋게하기위해 아래 `기존코드` 와 같이 설정 하였습니다.
+  그 이유는 [이전 클론 코딩을 하면서 v6을 사용](https://github.com/luckyjek/card-maker/blob/main/src/app.jsx#L9)해봤기 때문입니다.  
+- [React Router](https://reactrouter.com/docs/en/v6/upgrading/v5) 를 보고 처음 path설정할 때, 가독성을 좋게하기위해 아래 `기존코드` 와 같이 설정 하였습니다.  
 
 <details>
 <summary><b>기존 코드</b></summary>

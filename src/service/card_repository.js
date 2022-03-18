@@ -17,7 +17,6 @@ class CardRepository {
     }
 
     romoveCard(userId, card){
-        //ref뒤에 저장하고자하는 경로(자유) ->set을 이용해서 오브젝트를 전달
         firebaseApp.database().ref(`${userId}/cards/${card.id}`).remove();
     }
 }
