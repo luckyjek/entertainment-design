@@ -1,19 +1,18 @@
 # 🎤  K-pop 엔터테인먼트 홈페이지
 >K-문화를 선도하는 K-pop. 이에 어울리는 Art 느낌의 사이트 제작  
 >아티스트와 함께 찍은 사진을 저장할 수 있는 서비스  
->
+>https://623465b8ffb0001ab27c9a07--entertainment-desing.netlify.app/info
+
 <details>
 <summary><b>URL클릭하기 전, 주의사항 펼쳐보기</b></summary>
 <div markdown="1">
 
-- 아래의 URL은 netlify를 사용한 '임시URL'
+- 위의 URL은 netlify를 사용한 '임시URL'
 - 만약 아래와 같은 Page Not Found Modal이 나오면, Back to our site를 누르면 정상 동작
 - ![image](https://user-images.githubusercontent.com/70943889/158994427-b8f3ea43-fa0a-4d22-b7ba-b0cecd7ed6a2.png)
 
 </div>
 </details>
->https://623465b8ffb0001ab27c9a07--entertainment-desing.netlify.app/info
-
 
 </br>
 
