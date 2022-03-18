@@ -61,7 +61,7 @@
 
 <img src="https://github.com/luckyjek/entertainment-design/blob/main/public/images/portfolio/fileInput-service.png" width="100%" height="100%" />  
 
-- **추가, 삭제, 수정** 🔎 [코드 확인](...)
+- **추가, 삭제, 수정** 🔎 [maker.jsx 코드 확인](https://github.com/luckyjek/entertainment-design/blob/main/src/service/card_repository.js#L5) & [maker.jsx 코드 확인](https://github.com/luckyjek/entertainment-design/blob/main/src/components/maker/maker.jsx#L8)
   - 공통적으로 사용하는 함수는 Maker 컴포넌트에 정의하여 하위 컴포넌트로 props 전달 
 
 </div>
@@ -91,7 +91,7 @@
 
 - 지금생각하면 너무도 당연하지만, error를 해결하는 그 때는 왜 안되는지 이해가 안돼서  
 - 실질적으로 FileInput을 사용하는 CardAddForm 컴포넌트까지 주석을 하나하나 해가며 찾았습니다.  
-- 원인은 `기존코드` 와 같은 방식은 Maker로 전달되지 못하고 <Route />안으로 전달되는것을 깨달았고,
+- 원인은 `기존코드` 와 같은 방식은 Maker로 전달되지 못하고 <Route />안으로 전달되는것을 깨달았고,  
   다시 docs에 들어가서 확인 후, `개선된 코드` 와 같이 변경해주었습니다.
 
 <details>
@@ -114,24 +114,9 @@
 </br>
 
 ## 6. 회고 / 느낀점
->프로젝트 개발 회고 글: url
-
-----------------------------------------
-
-### entertainment-design
-
-####  3월 7일 
-##### 프로젝트 소개 및 기본설치 https://luckyjek.tistory.com/108
-
-####  3월 8일
-##### Router설정 및 Header, Footer 마크업 https://luckyjek.tistory.com/109
-##### Simple 레이아웃 마크업 https://luckyjek.tistory.com/110
-
-#### <span style="color:red">3월 9일</span>
-##### Youtube api받아오기 https://luckyjek.tistory.com/111
-
-#### 3월 10일
-##### 토글구현완료 및 Maker Card page Preview부분 레이아웃작업
-
-#### 3월 11일
-##### Make Card부분 Editor 그리고 Preview부분의 사진 업로드, 삭제 구현완료 그리고 대환장 오류파티
+> 이번 프로젝트를 진행하면서 [Cafe898-8](https://github.com/luckyjek/cafe898-8) 의 HTML, CSS, JavaScript로만 사용하여 기본으로
+> 랜딩 페이지를 만들어본 것이 많은 도움이 되었습니다. 어떤 일이든지 기본이 중요하다는 것을 많이 느꼈습니다.
+> 저는 Vue.js가 아닌 React.js 라이브러리를 선택하여 `드림 코딩의 React` 강의를 들으며 전체적인 React.js 컨셉을 이해할 수 있었습니다.  
+> 개인 [프로젝트 기획 및 필요한 기능 구현을 작성](https://luckyjek.tistory.com/108) 을 하면서,  
+> (물론 기획과는 다르게 바뀌는 부분도 있었지만) 어렵고, 오류 하나가 생기면 검색하고, 적용해보고를 반복하며 기본 2시간 소요하며 구현해나갔습니다.
+> 쉽지 않았지만, 팀이 아닌 개인으로 기능을 하나하나 구현해나가는 성취감은 더 배가 되가 되었습니다.
