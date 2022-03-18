@@ -23,7 +23,9 @@
 
 </br>
 
-## 3. 핵심 기능
+## 3. 사이트맵
+
+## 4. 핵심 기능
   - main에서 YouTube API 사용, 자동으로 음악이 흘러나오게 처리
   - ...
   - ...
@@ -32,25 +34,25 @@
 <summary><b>핵심 기능 설명 펼쳐보기</b></summary>
 <div markdown="1">
 
-### 3.1 구조도
+### 4.1 구조도
 
-<img src="..." width="60%" height="60%" />
+<img src="https://github.com/luckyjek/entertainment-design/blob/main/public/images/portfolio/entertainment-sitemap.png" width="100%" height="100%" />
 
 - **...** 🔎 [코드 확인](...)
   - ...
 
-### 3.2 main에서 YouTube API 사용
+### 4.2 main에서 YouTube API 사용
 
 <img src="https://github.com/luckyjek/entertainment-design/blob/main/public/images/portfolio/api-autoplay.png" width="100%" height="100%" />
   
 - **자동으로 음악이 흘러나오게 처리** 🔎 [코드 확인](https://github.com/luckyjek/entertainment-design/blob/main/src/components/main/main.jsx#L15)
   - default음악은 bts로 설정
 
-### 3.3 ...
+### 4.3 ...
 - **...** 🔎 [코드 확인](...)
   - ...
 
-### 3.4 ...
+### 4.4 ...
 - **...** 🔎 [코드 확인](...)
   - ...
 
@@ -59,8 +61,8 @@
 
 </br>
 
-## 4. 핵심 트러블 슈팅
-### 4.1 라우터 v5, 컴포넌트 전달시 문제
+## 5. 핵심 트러블 슈팅
+### 5.1 라우터 v5, 컴포넌트 전달시 문제
 
 <img src="https://github.com/luckyjek/entertainment-design/blob/main/public/images/portfolio/router-error.png" width="100%" height="100%" />
 
@@ -103,7 +105,7 @@
 
 </br>
 
-## 5. 회고 / 느낀점
+## 6. 회고 / 느낀점
 >프로젝트 개발 회고 글: url
 
 ----------------------------------------
