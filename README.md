@@ -46,15 +46,21 @@
 
 ### 4.2 재사용 가능한 Modal 컴포넌트  
 
-- **하나의 Modal 컴포넌트를을 만들어 필요한 4개 컴포넌트에 사용** 🔎 [코드 확인](...)
+- **하나의 Modal 컴포넌트를을 만들어 필요한 4개 컴포넌트에 사용** 🔎 [코드 확인](https://github.com/luckyjek/entertainment-design/blob/main/src/components/modal/modal.jsx#L5)
   - Modal이 필요한 각 컴포넌트는 name을 변수를 만들고, Modal로 값을 전달
 
 ### 4.3 Faribase 사용한 Google, Github 로그인  
-- **AuthService class생성, 구조화** 🔎 [코드 확인](...)
+ 
+<img src="https://github.com/luckyjek/entertainment-design/blob/main/public/images/portfolio/login-service.png" width="100%" height="100%" />  
+
+- **AuthService class생성, 구조화** 🔎 [auth_service.js 코드 확인](https://github.com/luckyjek/entertainment-design/blob/main/src/service/auth_service.js#L4) & [login.jsx 코드 확인](https://github.com/luckyjek/entertainment-design/blob/main/src/components/login/login.jsx#L5)
   - firebase와 네트워크 통신할때 구조화  
   - Google, Github 로그인 인증, 함수 재사용 
 
 ### 4.4 Faribase 사용한 실시간 데이터베이스  
+
+<img src="https://github.com/luckyjek/entertainment-design/blob/main/public/images/portfolio/fileInput-service.png" width="100%" height="100%" />  
+
 - **추가, 삭제, 수정** 🔎 [코드 확인](...)
   - 공통적으로 사용하는 함수는 Maker 컴포넌트에 정의하여 하위 컴포넌트로 props 전달 
 
