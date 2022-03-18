@@ -25,7 +25,7 @@ const Main = (props)=> {
     return(
         <section className={styles.main}>
             <Link to={`/info`} className={styles.fild}>
-                <img className={styles.logo} src="/images/goInfo.png" alt="logo" />
+                <img className={styles.logo} src="/images/new-goInfo.png" alt="logo" />
             </Link>
             <div className={styles.container}>
                 {props.videos.map(video => (

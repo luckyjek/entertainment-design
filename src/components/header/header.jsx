@@ -22,7 +22,7 @@ const Header = ({onLogout}) => {
                 <div className={styles.containerNav}>
                     <Link to={`/main`} className={styles.fild}>
                         <img className={styles.logo} src="/images/logo.png" alt="logo" />
-                        <h1 className={styles.title}>Entertainment Desing</h1>
+                        <h1 className={styles.title}>Entertainment Design</h1>
                     </Link>
                         <ul className={styles.ul}>
                             <li className={`nav-item ${styles.navItem}`}

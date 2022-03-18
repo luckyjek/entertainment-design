@@ -15,7 +15,7 @@ const Modal = (props) => {
             <button className={styles.button} onClick={() => {
                 history.push('/info');
              }}>
-                Go Infomation
+                Go Information
             </button>
         </div>
         </div>
