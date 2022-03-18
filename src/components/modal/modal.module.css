@@ -1,6 +1,15 @@
 @value primaryGreen, primaryLightGreen, primaryWhite from '../../common/colors.css';
 
-.login {
+.attention{
+    margin: 0;
+    font-size: 5rem;
+    margin-top:-20%;
+}
+h2{
+    margin:0;
+}
+
+.modal {
   position: relative;
   width: 20rem;
   height: 20rem;
@@ -10,19 +19,6 @@
   justify-content: center;
   border-radius: 1rem;
   background-color: primaryWhite;
-}
-
-.list {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: primaryWhite;
-  list-style: none;
-  padding: 0.5rem;
-}
-
-.item {
-  padding: 1rem;
 }
 
 .button {
@@ -36,21 +32,8 @@
   transition: all var(--animation-duration) ease-in;
 }
 
-.button i:hover, 
 .homeBtn:hover {
   transform: scale(1.1);
-}
-
-.simple{
-  font-size: 1.5rem;
-  margin-bottom: -5%;
-}
-.google{
-  color:rgb(228, 13, 13);
-  font-size: 2rem;
-}
-.github{
-  font-size: 2rem;
 }
 
 .homeBtn{
@@ -58,9 +41,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30%;
+  width: 40%;
   height: 16%;
-  margin-left: 35%;
+  margin-left: 30%;
   margin-top: 70%;
   font-size: 1rem;
   border-radius: 0.5rem;

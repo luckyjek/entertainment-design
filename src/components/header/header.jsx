@@ -45,7 +45,7 @@ const Header = ({onLogout}) => {
             </header>
             {/* <button className={styles.toogle} onClick={onToogle}> */}
             <button className={styles.toogle}>
-                <i class="fas fa-bars" aria-hidden="true"></i>
+                <i className="fas fa-bars" aria-hidden="true"></i>
             </button>
         </>
     )

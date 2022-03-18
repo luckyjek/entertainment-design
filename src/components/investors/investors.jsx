@@ -1,18 +1,12 @@
-import React from 'react';
-import { useHistory } from 'react-router-dom';
+import React, { useState } from 'react';
+// import { useHistory } from 'react-router-dom';
+import Modal from '../modal/modal';
 
 const Investors = (props) => {
-    const history = useHistory();
-
+    const name = 'Inverstors';
     return(
         <>
-            <h3>Comming Soon</h3>       
-            <button 
-            onClick={() => {
-                history.push('/info');
-            }}
-            >Go to Infomation
-            </button>
+            <Modal name={name}/>
         </>
     )
 };
