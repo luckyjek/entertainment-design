@@ -25,6 +25,8 @@
 
 ## 3. 사이트맵
 
+<img src="https://github.com/luckyjek/entertainment-design/blob/main/public/images/portfolio/entertainment-sitemap.png" width="100%" height="100%" />
+
 ## 4. 핵심 기능
   - main에서 YouTube API 사용, 자동으로 음악이 흘러나오게 처리
   - ...
@@ -36,7 +38,7 @@
 
 ### 4.1 구조도
 
-<img src="https://github.com/luckyjek/entertainment-design/blob/main/public/images/portfolio/entertainment-sitemap.png" width="100%" height="100%" />
+<img>
 
 - **...** 🔎 [코드 확인](...)
   - ...
