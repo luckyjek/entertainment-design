@@ -1,9 +1,13 @@
 import React from 'react';
+import Modal from '../modal/modal';
 
-export default function Consulting() {
-  return (
-    <>
-      <h1 className='consulting'>CONSULTING</h1>
-    </>
-  );
+const Consulting = () =>{
+  const name = 'Consulting';
+  return(
+      <>
+          <Modal name={name}/>
+      </>
+  )
 }
+
+export default Consulting;

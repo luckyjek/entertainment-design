@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
-// import { useHistory } from 'react-router-dom';
+import React from 'react';
 import Modal from '../modal/modal';
 
-const Investors = (props) => {
+const Investors = () => {
     const name = 'Inverstors';
     return(
         <>

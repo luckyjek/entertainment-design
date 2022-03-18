@@ -1,5 +1,12 @@
 import React from 'react';
+import Modal from '../modal/modal';
 
-export default function ContactUs() {
-  return <h1 className='contact-us'>DESIGN</h1>;
+const Design = () =>{
+  const name = 'Design';
+  return(
+      <>
+          <Modal name={name}/>
+      </>
+  )
 }
+export default Design;
