@@ -9,7 +9,7 @@
 
 - 위의 URL은 netlify를 사용한 '임시URL'
 - 만약 아래와 같은 Page Not Found Modal이 나오면, Back to our site를 누르면 정상 동작
-- ![image](https://user-images.githubusercontent.com/70943889/158994427-b8f3ea43-fa0a-4d22-b7ba-b0cecd7ed6a2.png)
+![image](https://user-images.githubusercontent.com/70943889/158994427-b8f3ea43-fa0a-4d22-b7ba-b0cecd7ed6a2.png)
 
 </div>
 </details>
