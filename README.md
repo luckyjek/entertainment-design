@@ -100,7 +100,8 @@
 </details>
 
 - error의 원인은 지금 생각하면 너무도 당연하지만, 해결하는 그때는 왜 안되는지 이해가 안 돼서 [비슷한 error를 해결한 블로그를 참고하여](https://karzin.tistory.com/242) FileInput 컴포넌트를 사용하는 CardAddForm 컴포넌트까지 주석을 하나하나 해가며 원인을 찾았습니다.  
-- 원인은 라우터 설정에 있었습니다. 즉, `app·jsx`에서 라우터 설정을 하게 될 때 `기존 코드`와 같은 방식은 Maker 컴포넌트로 값이 전달되지 못하고 <Route />안으로 전달되는 것을 깨달았습니다. 이에 docs에 들어가서 확인 후, `개선된 코드`와 같이 변경해주었습니다.
+- 원인은 라우터 설정에 있었습니다. 즉, `app·jsx`에서 라우터 설정을 하게 될 때 `기존 코드`와 같은 방식은 Maker 컴포넌트로 값이 전달되지 못하고 <Route />안으로 전달되는 것을 깨달았습니다.   
+- 이에 원인을 찾고 다시 라우터 설정을 해주기 위해 [React Router를 참고하여](https://reactrouter.com/docs/en/v6/upgrading/v5), `개선된 코드`와 같이 변경해주었습니다.
 
 <details>
 <summary><b>개선된 코드</b></summary>
@@ -122,6 +123,8 @@
 </br>
 
 ## 6. 회고 / 느낀점
->Entertainment Design 프로젝트를 진행하면서 [HTML, CSS, JavaScript로만 사용하여 기본으로 랜딩페이지](https://github.com/luckyjek/cafe898-8)를 만들어본 것이 토대가 되어 React.js의 개념을 >이해하는 데 많은 도움이 되었습니다.  
+>Entertainment Design 프로젝트를 진행하면서 처음 사용하는 React.js의 개념을 이해하는데 있어 [이전에 만든 랜딩페이지](https://github.com/luckyjek/cafe898-8)가 토대가 되어 많은 도움이 되었습니다. 
 >이에 어떤 일이든지 기본이 가장 중요하다는 것을 다시 한번 깨달을 수 있었던 프로젝트였습니다.  
->Entertainment Design 프로젝트는 `드림 코딩의 React` 강의를 들으며 전체적인 React.js 개념을 이해하고, 응용하였습니다. 물론 처음 React.js를 사용하며 개념을 이해하면서 구현하는 것은 어려웠지만, `팀`이 아닌 `개인`으로 기능을 하나하나 구현해나가는 성취감은 더 배가 된 프로젝트였습니다.
+>
+>Entertainment Design 프로젝트는 `드림 코딩의 React` 강의를 들으며 전체적인 React.js 개념을 이해하고, 응용하였습니다.  
+>물론 처음 React.js를 사용하며 개념을 이해하면서 구현하는 것은 어려웠지만, `팀`이 아닌 `개인`으로 기능을 하나하나 구현해나가는 성취감은 더 배가 된 프로젝트였습니다.
