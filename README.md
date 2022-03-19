@@ -58,7 +58,7 @@
 ### 4.2 재사용 가능한 Modal 컴포넌트  
 
 - **재사용 가능한 Modal 컴포넌트를 만든 후, 필요한 4개 컴포넌트에 재사용** 🔎 [코드 확인](https://github.com/luckyjek/entertainment-design/blob/main/src/components/modal/modal.jsx#L5)
-  - Modal이 필요한 각 컴포넌트에 name을 변수로 만들고, 재사용할 수 있는 Modal로 값을 전달해 주도록 구현하였습니다.
+  - Modal이 필요한 각 컴포넌트에 name을 변수로 만들고, 재사용할 수 있는 Modal로 값을 전달하도록 구현하였습니다.
 
 ### 4.3 Firebase 사용한 Google, GitHub 로그인  
  
@@ -122,8 +122,6 @@
 </br>
 
 ## 6. 회고 / 느낀점
-> Entertainment Design 프로젝트를 진행하면서 [HTML, CSS, JavaScript로만 사용하여 기본으로 랜딩 페이지](https://github.com/luckyjek/cafe898-8)를 만들어본 것이 토대가 되어 많은 도움이 되었고, 이에 어떤 일이든지 기본이 가장 중요하다는 것을 다시 한번 깨달을 수 있었던 프로젝트였습니다.
-> 
-> 저는 이번 프로젝트에서 `드림 코딩의 React` 강의를 들으며 전체적인 React.js 개념을 이해할 수 있었습니다.  
-> 개인 [프로젝트 기획 및 필요한 기능 구현을 작성](https://luckyjek.tistory.com/108) 을 하면서, error가 발생하면 검색하고, 적용해보고를 반복하며 기본 2시간 소요하며 구현해나갔습니다.  
-> React.js를 사용하여 컨셉을 이해하며 구현하는 것이 어려웠지만, 팀이 아닌 개인으로 기능을 하나하나 구현해나가는 성취감은 더 배가 되가 되었습니다.
+>Entertainment Design 프로젝트를 진행하면서 [HTML, CSS, JavaScript로만 사용하여 기본으로 랜딩페이지](https://github.com/luckyjek/cafe898-8)를 만들어본 것이 토대가 되어 React.js의 개념을 >이해하는 데 많은 도움이 되었습니다. 이에 어떤 일이든지 기본이 가장 중요하다는 것을 다시 한번 깨달을 수 있었던 프로젝트였습니다.
+>Entertainment Design 프로젝트는 `드림 코딩의 React` 강의를 들으며 전체적인 React.js 개념을 이해하고, 응용하였습니다.
+>물론 처음 React.js를 사용하며 개념을 이해하면서 구현하는 것은 어려웠지만, `팀`이 아닌 `개인`으로 기능을 하나하나 구현해나가는 성취감은 더 배가 된 프로젝트였습니다.
