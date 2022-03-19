@@ -41,7 +41,7 @@
 ## 4. 핵심 기능
   - main 페이지에서 YouTube API 사용, 자동으로 음악 재생  
   - 재사용 가능한 Modal 컴포넌트  
-  - Firebase 사용한 Google, Github 로그인  
+  - Firebase 사용한 Google, GitHub 로그인  
   - Firebase 사용한 실시간 데이터베이스  
 
 <details>
@@ -52,7 +52,7 @@
 
 <img src="https://github.com/luckyjek/entertainment-design/blob/main/public/images/portfolio/api-autoplay.png" width="100%" height="100%" />
   
-- **'autoplay=1', allow='autoplay' 자동으로 음악 재생 되도록 [참고](https://www.outsystems.com/forums/discussion/66950/autoplay-an-embeded-youtube-video-in-reactive-web-app/)문서보며 처리** 🔎 [코드 확인](https://github.com/luckyjek/entertainment-design/blob/main/src/components/main/main.jsx#L15)
+- **'autoplay=1', allow='autoplay' 자동으로 음악 재생되도록 [참고자료](https://www.outsystems.com/forums/discussion/66950/autoplay-an-embeded-youtube-video-in-reactive-web-app/)보며 처리** 🔎 [코드 확인](https://github.com/luckyjek/entertainment-design/blob/main/src/components/main/main.jsx#L15)
   - default음악은 bts로 설정  
 
 ### 4.2 재사용 가능한 Modal 컴포넌트  
@@ -60,7 +60,7 @@
 - **재사용 가능한 Modal 컴포넌트를 만든 후, 필요한 4개 컴포넌트에 재사용** 🔎 [코드 확인](https://github.com/luckyjek/entertainment-design/blob/main/src/components/modal/modal.jsx#L5)
   - Modal이 필요한 각 컴포넌트에 name을 변수로 만들고, 재사용 가능한 Modal로 값을 전달
 
-### 4.3 Faribase 사용한 Google, Github 로그인  
+### 4.3 Firebase 사용한 Google, GitHub 로그인  
  
 <img src="https://github.com/luckyjek/entertainment-design/blob/main/public/images/portfolio/login-service.png" width="100%" height="100%" />  
 
@@ -100,10 +100,10 @@
 </div>
 </details>
 
-- 지금생각하면 너무도 당연하지만, error를 해결하는 그 때는 왜 안되는지 이해가 안돼서  
-- 실질적으로 FileInput을 사용하는 CardAddForm 컴포넌트까지 주석을 하나하나 해가며 찾았습니다.  
-- 원인은 `기존코드` 와 같은 방식은 Maker로 전달되지 못하고 <Route />안으로 전달되는것을 깨달았고,  
-  다시 docs에 들어가서 확인 후, `개선된 코드` 와 같이 변경해주었습니다.
+- 지금 생각하면 너무도 당연하지만, error를 해결하는 그때는 왜 안되는지 이해가 안 돼서 [비슷한 error를 해결한 블로그를 참고하여](https://karzin.tistory.com/242)  
+  FileInput 컴포넌트를 사용하는 CardAddForm 컴포넌트까지 주석을 하나하나 해가며 원인을 찾았습니다.  
+- 원인은 라우터 설정에 있었습니다. 즉, `app·jsx`에서 라우터 설정을 하게 될 때 `기존 코드`와 같은 방식은
+  Maker 컴포넌트로 값이 전달되지 못하고 <Route />안으로 전달되는 것을 깨달았습니다. 이에 docs에 들어가서 확인 후, `개선된 코드`와 같이 변경해주었습니다.
 
 <details>
 <summary><b>개선된 코드</b></summary>
@@ -125,9 +125,11 @@
 </br>
 
 ## 6. 회고 / 느낀점
-> 이번 프로젝트를 진행하면서 [Cafe898-8](https://github.com/luckyjek/cafe898-8) 의 HTML, CSS, JavaScript로만 사용하여 기본으로
-> 랜딩 페이지를 만들어본 것이 많은 도움이 되었습니다. 어떤 일이든지 기본이 중요하다는 것을 많이 느꼈습니다.
-> 저는 Vue.js가 아닌 React.js 라이브러리를 선택하여 `드림 코딩의 React` 강의를 들으며 전체적인 React.js 컨셉을 이해할 수 있었습니다.  
+> Entertainment Design 프로젝트를 진행하면서 [HTML, CSS, JavaScript로만 사용하여 기본으로 랜딩 페이지](https://github.com/luckyjek/cafe898-8)를
+> 만들어본 것이 토대가 되어 많은 도움이 되었고, 이에 어떤 일이든지 기본이 가장 중요하다는 것을 다시 한번 깨달을 수 있었던 프로젝트였습니다.
+> 
+> 저는 이번 프로젝트에서 `드림 코딩의 React` 강의를 들으며 전체적인 React.js 개념을 이해할 수 있었습니다.  
 > 개인 [프로젝트 기획 및 필요한 기능 구현을 작성](https://luckyjek.tistory.com/108) 을 하면서,  
-> (물론 기획과는 다르게 바뀌는 부분도 있었지만) 어렵고, 오류 하나가 생기면 검색하고, 적용해보고를 반복하며 기본 2시간 소요하며 구현해나갔습니다.
-> 쉽지 않았지만, 팀이 아닌 개인으로 기능을 하나하나 구현해나가는 성취감은 더 배가 되가 되었습니다.
+> error가 발생하면 검색하고, 적용해보고를 반복하며 기본 2시간 소요하며 구현해나갔습니다.  
+> React.js를 사용하여 컨셉을 이해하며 구현하는 것이 어려웠지만,  
+> 팀이 아닌 개인으로 기능을 하나하나 구현해나가는 성취감은 더 배가 되가 되었습니다.
